@@ -4,6 +4,13 @@ public class TransportasImpl implements Transportas{
     private String tipas;
     private Boolean variklis;
     private int pagaminimoMetai;
+
+    public TransportasImpl(String tipas, Boolean variklis, int pagaminimoMetai){
+        this.tipas = tipas;
+        this.variklis = variklis;
+        this.pagaminimoMetai = pagaminimoMetai;
+    }
+
     @Override
     public String getTipas() {
         return this.tipas;

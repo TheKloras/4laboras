@@ -1,9 +1,20 @@
 package com.company.isvestine;
 
-public class AutomobilisImpl implements Automobilis{
+import com.company.bazine.TransportasImpl;
+import com.sun.org.apache.xpath.internal.operations.Bool;
+
+public class AutomobilisImpl extends TransportasImpl implements Automobilis{
     private String marke;
     private int duruSkaicius;
     private Boolean varomasElektra;
+
+    public AutomobilisImpl(String tipas, Boolean variklis, int pagaminimoMetai, String marke, int duruSkaicius, Boolean varomasElektra){
+        super(tipas,variklis,pagaminimoMetai);
+        this.marke = marke;
+        this.duruSkaicius = duruSkaicius;
+        this.varomasElektra = varomasElektra;
+    }
+
     @Override
     public String getMarke() {
         return this.marke;

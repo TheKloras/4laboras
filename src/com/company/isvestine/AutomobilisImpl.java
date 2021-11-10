@@ -1,7 +1,6 @@
 package com.company.isvestine;
 
 import com.company.bazine.TransportasImpl;
-import com.sun.org.apache.xpath.internal.operations.Bool;
 
 public class AutomobilisImpl extends TransportasImpl implements Automobilis{
     private String marke;
@@ -43,5 +42,14 @@ public class AutomobilisImpl extends TransportasImpl implements Automobilis{
     @Override
     public void setVaromasElektra(Boolean varomasElektra) {
         this.varomasElektra = varomasElektra;
+    }
+
+    @Override
+    public String toString() {
+        return "AutomobilisImpl{" +
+                "marke='" + marke + '\'' +
+                ", duruSkaicius=" + duruSkaicius +
+                ", varomasElektra=" + varomasElektra +
+                '}';
     }
 }

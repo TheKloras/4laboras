@@ -40,4 +40,13 @@ public class TransportasImpl implements Transportas{
     public void setPagaminimoMetai(int pagaminimoMetai) {
         this.pagaminimoMetai = pagaminimoMetai;
     }
+
+    @Override
+    public String toString() {
+        return "TransportasImpl{" +
+                "tipas='" + tipas + '\'' +
+                ", variklis=" + variklis +
+                ", pagaminimoMetai=" + pagaminimoMetai +
+                '}';
+    }
 }

@@ -80,7 +80,7 @@ public class Main {
         transportas[8] = automobilis4;
         transportas[9] = automobilis5;
 
-        //Ciklas patikrinimui ar tai yra automobilis ir ar jis varomas elektra, jei taip tai išvedami objekto duomenys
+        //Ciklas patikrinimui ar tai yra automobilis ir ar jis varomas elektra, jei taip tai išvedami objekto duomenys.
         for (TransportasImpl x : transportas) {
             if (x instanceof AutomobilisImpl&&((AutomobilisImpl) x).getVaromasElektra()==true) {
                 System.out.println(x.getTipas() + " " + ((AutomobilisImpl) x).getMarke());

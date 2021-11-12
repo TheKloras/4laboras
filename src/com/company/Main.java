@@ -25,6 +25,7 @@ public class Main {
         AutomobilisImpl automobilis5 = new AutomobilisImpl("Sausumos",true,2010,"Mercedes-Benz",2,true);
         */
         try {
+            //nuskaitomi duomenys iš failo
             File failas = new File("transportas.txt");
             Scanner read = new Scanner(failas);
             //Tėvo objektai
@@ -41,6 +42,7 @@ public class Main {
             AutomobilisImpl automobilis4 = new AutomobilisImpl(read.next(), Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()), read.next(), Integer.parseInt(read.next()), Boolean.parseBoolean(read.next()));
             AutomobilisImpl automobilis5 = new AutomobilisImpl(read.next(), Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()), read.next(), Integer.parseInt(read.next()), Boolean.parseBoolean(read.next()));
 
+            //uždaromas failas
             read.close();
             //Sukeliami visi objektai į sarašą
             TransportasImpl[] transportas = new TransportasImpl[10];
@@ -80,7 +82,7 @@ public class Main {
         transportas[8] = automobilis4;
         transportas[9] = automobilis5;
 
-        //Ciklas patikrinimui ar tai yra automobilis ir ar jis varomas elektra, jei taip tai išvedami objekto duomenys.
+        //Ciklas patikrinimui ar tai yra automobilis ir ar jis varomas elektra, jei taip tai išvedami objekto duomenys
         for (TransportasImpl x : transportas) {
             if (x instanceof AutomobilisImpl&&((AutomobilisImpl) x).getVaromasElektra()==true) {
                 System.out.println(x.getTipas() + " " + ((AutomobilisImpl) x).getMarke());

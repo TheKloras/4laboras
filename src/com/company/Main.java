@@ -28,7 +28,7 @@ public class Main {
             File failas = new File("transportas.txt");
             Scanner read = new Scanner(failas);
             //Tėvo objektai
-            TransportasImpl transportas1 = new TransportasImpl(read.next(), Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()));
+            TransportasImpl transportas1 = new TransportasImpl(read.next(),Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()));
             TransportasImpl transportas2 = new TransportasImpl(read.next(),Boolean.parseBoolean(read.next()),Integer.parseInt(read.next()));
             TransportasImpl transportas3 = new TransportasImpl(read.next(),Boolean.parseBoolean(read.next()),Integer.parseInt(read.next()));
             TransportasImpl transportas4 = new TransportasImpl(read.next(),Boolean.parseBoolean(read.next()),Integer.parseInt(read.next()));

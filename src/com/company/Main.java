@@ -28,18 +28,18 @@ public class Main {
             File failas = new File("transportas.txt");
             Scanner read = new Scanner(failas);
             //Tėvo objektai
-            TransportasImpl transportas1 = new TransportasImpl(read.next(),Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()));
-            TransportasImpl transportas2 = new TransportasImpl(read.next(),Boolean.parseBoolean(read.next()),Integer.parseInt(read.next()));
-            TransportasImpl transportas3 = new TransportasImpl(read.next(),Boolean.parseBoolean(read.next()),Integer.parseInt(read.next()));
-            TransportasImpl transportas4 = new TransportasImpl(read.next(),Boolean.parseBoolean(read.next()),Integer.parseInt(read.next()));
-            TransportasImpl transportas5 = new TransportasImpl(read.next(),Boolean.parseBoolean(read.next()),Integer.parseInt(read.next()));
+            TransportasImpl transportas1 = new TransportasImpl(read.next(), Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()));
+            TransportasImpl transportas2 = new TransportasImpl(read.next(), Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()));
+            TransportasImpl transportas3 = new TransportasImpl(read.next(), Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()));
+            TransportasImpl transportas4 = new TransportasImpl(read.next(), Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()));
+            TransportasImpl transportas5 = new TransportasImpl(read.next(), Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()));
 
             //Vaiko objektai
-            AutomobilisImpl automobilis1 = new AutomobilisImpl(read.next(),Boolean.parseBoolean(read.next()),Integer.parseInt(read.next()),read.next(),Integer.parseInt(read.next()),Boolean.parseBoolean(read.next()));
-            AutomobilisImpl automobilis2 = new AutomobilisImpl(read.next(),Boolean.parseBoolean(read.next()),Integer.parseInt(read.next()),read.next(),Integer.parseInt(read.next()),Boolean.parseBoolean(read.next()));
-            AutomobilisImpl automobilis3 = new AutomobilisImpl(read.next(),Boolean.parseBoolean(read.next()),Integer.parseInt(read.next()),read.next(),Integer.parseInt(read.next()),Boolean.parseBoolean(read.next()));
-            AutomobilisImpl automobilis4 = new AutomobilisImpl(read.next(),Boolean.parseBoolean(read.next()),Integer.parseInt(read.next()),read.next(),Integer.parseInt(read.next()),Boolean.parseBoolean(read.next()));
-            AutomobilisImpl automobilis5 = new AutomobilisImpl(read.next(),Boolean.parseBoolean(read.next()),Integer.parseInt(read.next()),read.next(),Integer.parseInt(read.next()),Boolean.parseBoolean(read.next()));
+            AutomobilisImpl automobilis1 = new AutomobilisImpl(read.next(), Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()), read.next(), Integer.parseInt(read.next()), Boolean.parseBoolean(read.next()));
+            AutomobilisImpl automobilis2 = new AutomobilisImpl(read.next(), Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()), read.next(), Integer.parseInt(read.next()), Boolean.parseBoolean(read.next()));
+            AutomobilisImpl automobilis3 = new AutomobilisImpl(read.next(), Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()), read.next(), Integer.parseInt(read.next()), Boolean.parseBoolean(read.next()));
+            AutomobilisImpl automobilis4 = new AutomobilisImpl(read.next(), Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()), read.next(), Integer.parseInt(read.next()), Boolean.parseBoolean(read.next()));
+            AutomobilisImpl automobilis5 = new AutomobilisImpl(read.next(), Boolean.parseBoolean(read.next()), Integer.parseInt(read.next()), read.next(), Integer.parseInt(read.next()), Boolean.parseBoolean(read.next()));
 
             read.close();
             //Sukeliami visi objektai į sarašą
@@ -57,7 +57,7 @@ public class Main {
 
             //Ciklas patikrinimui ar tai yra automobilis ir ar jis varomas elektra, jei taip tai išvedami objekto duomenys
             for (TransportasImpl x : transportas) {
-                if (x instanceof AutomobilisImpl&&((AutomobilisImpl) x).getVaromasElektra()==true) {
+                if (x instanceof AutomobilisImpl && ((AutomobilisImpl) x).getVaromasElektra() == true) {
                     System.out.println(x.getTipas() + " " + ((AutomobilisImpl) x).getMarke());
                     //x.toString();
                 }

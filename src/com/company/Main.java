@@ -25,10 +25,6 @@ public class Main {
         AutomobilisImpl automobilis5 = new AutomobilisImpl("Sausumos",true,2010,"Mercedes-Benz",2,true);
         */
         try {
-            String tipas,marke;
-            Boolean variklis,varomasElektra;
-            int metai,duruSkaicius;
-
             File failas = new File("transportas.txt");
             Scanner read = new Scanner(failas);
             //Tėvo objektai

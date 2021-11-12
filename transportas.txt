@@ -1,0 +1,11 @@
+Sausumos true 2009
+Vandens true 1998
+Vandens false 2005
+Oro true 2015
+Sausumos false 2018
+
+Sausumos true 2011 Opel 2 false
+Sausumos true 2004 Renault 4 true
+Sausumos true 1996 Volvo 4 false
+Sausumos true 2017 Opel 4 true
+Sausumos true 2010 Mercedes-Benz 2 true
